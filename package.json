@@ -1,0 +1,33 @@
+{
+  "name": "chase",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "nudge": "tsx scripts/send-nudges.ts",
+    "keys": "web-push generate-vapid-keys"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.8",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "web-push": "^3.6.7",
+    "workbox-precaching": "^7.3.0",
+    "workbox-routing": "^7.3.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@types/web-push": "^3.6.4",
+    "@vitejs/plugin-react": "^4.4.1",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.4",
+    "vite-plugin-pwa": "^1.0.0",
+    "vitest": "^3.1.2"
+  }
+}
